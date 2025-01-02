@@ -1,0 +1,3 @@
+ALTER TABLE Restaurants
+ADD FoodName NVARCHAR(100),
+ADD FoodPrice DECIMAL(10, 2);

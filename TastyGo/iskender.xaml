@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="TastyGo.iskender"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignHeight="792.8" d:DesignWidth="1536">
+    <Grid Background="White">
+        <Image HorizontalAlignment="Left" Height="310" Margin="235,203,0,0" VerticalAlignment="Top" Width="413" Source="/iskender.jpeg">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/iskender.jpeg"/>
+            </Image.OpacityMask>
+        </Image>
+        <Button Content="" HorizontalAlignment="Left" Margin="247,572,0,0" VerticalAlignment="Top" Height="80" Width="80" Click="Like" BorderThickness="0,0,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/Like.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="462,572,0,0" VerticalAlignment="Top" Height="80" Width="80" Click="Dislike" BorderThickness="0,0,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/Dislike.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="60,50,0,0" VerticalAlignment="Top" Height="80" Width="80" Click="BackButton" BorderThickness="0,0,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/Back.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="LikeTextBlock" HorizontalAlignment="Left" Margin="341,586,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="80" FontSize="36" RenderTransformOrigin="0.606,0.425"><Run Language="tr-tr" Text="0"/></TextBlock>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="441,562,0,0" Stroke="Black" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBlock x:Name="DislikeTextBlock" HorizontalAlignment="Left" Margin="558,586,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="80" FontSize="36" RenderTransformOrigin="0.606,0.425"><Run Language="tr-tr" Text="0"/></TextBlock>
+        <Rectangle HorizontalAlignment="Left" Height="480" Margin="855,203,0,0" Stroke="#FF767676" VerticalAlignment="Top" Width="523" Fill="#FFE0E0E0" RadiusX="20" RadiusY="20"/>
+        <Button Content="Add to Cart" HorizontalAlignment="Left" Margin="1024,577,0,0" VerticalAlignment="Top" Background="#FF9D0909" Style="{StaticResource RoundedButton}" Width="184" BorderThickness="2,2,2,2" BorderBrush="Black" Height="70" Click="CartButton" FontSize="24" Foreground="White" FontWeight="Bold"/>
+        <TextBlock x:Name="FoodNameTextBlock" HorizontalAlignment="Left" Margin="894,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="94" Width="450" FontSize="72" FontWeight="Bold" Text="" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="984,431,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="157" FontSize="24" FontWeight="Bold"><Run Text="Cuisine "/><Run Language="tr-tr" Text="T"/><Run Text="ype:"/></TextBlock>
+        <TextBlock x:Name="CuisineTypeTextBlock" HorizontalAlignment="Left" Margin="1152,429,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="44" FontSize="24" Text=""/>
+        <TextBlock x:Name="PriceTextBlock" HorizontalAlignment="Left" Margin="1015,504,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="208" FontSize="48" FontWeight="Bold" Text="" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="984,370,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="99" FontSize="24" FontWeight="Bold"><Run Text="Address"/><Run Language="tr-tr" Text=":"/></TextBlock>
+        <TextBlock x:Name="AddressTextBlock" HorizontalAlignment="Left" Margin="1104,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="266" FontSize="24" Text=""/>
+        
+    </Grid>
+</UserControl>
+
+
